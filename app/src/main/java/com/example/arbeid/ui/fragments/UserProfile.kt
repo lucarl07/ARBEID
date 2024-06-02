@@ -1,4 +1,4 @@
-package com.example.arbeid.ui.activities
+package com.example.arbeid.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
