@@ -17,7 +17,7 @@
     <!-- NEUTRAL: -->
     <color name="black">#FF000000</color>
     <color name="dark_grey">#FF555555</color>
-    <color name="grey">#FF888888</color>
-    <color name="light_grey">#FFAEAEAE</color>
+    <color name="grey">#FFAEAEAE</color>
+    <color name="light_grey">#FFD3D3D3</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
