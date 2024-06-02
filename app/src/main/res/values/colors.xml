@@ -11,11 +11,13 @@
     <color name="light_blue">#395094</color>
     <color name="blue_transparent">#800F1D4E</color>
     <color name="orange_transparent">#80EF4706</color>
+    <color name="grey_transparent">#66E8E8E8</color>
+    <color name="light_grey_transparent">#CCE2E2E2</color>
 
     <!-- NEUTRAL: -->
     <color name="black">#FF000000</color>
     <color name="dark_grey">#FF555555</color>
-    <color name="grey">#66E8E8E8</color> <!-- Will start with "#FF..." outside of the Register activity -->
-    <color name="light_grey">#CCE2E2E2</color> <!-- Will start with "#FF..." outside of the Register activity -->
+    <color name="grey">#FF888888</color>
+    <color name="light_grey">#FFAEAEAE</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
