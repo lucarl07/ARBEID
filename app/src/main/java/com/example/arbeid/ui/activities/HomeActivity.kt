@@ -8,6 +8,7 @@ import com.example.arbeid.R
 import com.example.arbeid.databinding.ActivityHomeBinding
 import com.example.arbeid.ui.fragments.TestFragment01
 import com.example.arbeid.ui.fragments.TestFragment02
+import com.example.arbeid.ui.fragments.UserProfile
 
 class HomeActivity : AppCompatActivity() {
 
@@ -25,7 +26,7 @@ class HomeActivity : AppCompatActivity() {
                 R.id.home -> replaceFragment(TestFragment01())
                 R.id.courses -> replaceFragment(TestFragment02())
                 R.id.create_post -> replaceFragment(TestFragment01())
-                R.id.user_profile -> replaceFragment(TestFragment02())
+                R.id.user_profile -> replaceFragment(UserProfile())
             }; true
         }
     }
