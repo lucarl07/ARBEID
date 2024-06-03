@@ -52,8 +52,8 @@
         android:layout_marginHorizontal="38dp"
         android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/user_name_layout"
+        <LinearLayout
+            android:id="@+id/user_name_wrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -65,21 +65,16 @@
                 android:text="Fulano da Silva"
                 android:textColor="@color/orange"
                 android:textSize="28sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
+                android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:contentDescription="Clique para editar o seu nome"
-                android:src="@drawable/icon_edit"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/user_name"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:src="@drawable/icon_edit" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/user_description"
@@ -189,7 +184,7 @@
             android:id="@+id/user_skills"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp" >
+            android:layout_marginBottom="30dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
