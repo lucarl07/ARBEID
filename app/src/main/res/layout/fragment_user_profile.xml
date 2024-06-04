@@ -13,44 +13,25 @@
         android:layout_width="match_parent"
         android:layout_height="220dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/user_banner_wrapper"
+        <ImageView
+            android:id="@+id/user_banner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="160dp"
+            android:background="@color/grey"
+            android:contentDescription="Papel de parede do usuário"
+            android:scaleType="centerCrop"
+            android:src="TODO"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" >
-
-            <ImageView
-                android:id="@+id/user_banner"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:background="@color/grey"
-                android:contentDescription="Papel de parede do usuário"
-                android:scaleType="centerCrop"
-                android:src="TODO"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="100dp"
-                android:src="@drawable/icon_plus"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <RelativeLayout
             android:id="@+id/user_picture_wrapper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" >
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/user_picture"
@@ -88,7 +69,8 @@
         <LinearLayout
             android:id="@+id/user_name_wrapper"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/user_name"
@@ -101,8 +83,8 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:contentDescription="Clique para editar o seu nome"
@@ -113,9 +95,10 @@
             android:id="@+id/user_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="15dp"
+            android:layout_marginVertical="10dp"
             android:fontFamily="@font/poppins"
             android:text="Lorem ipsum dolor sit amet sirius melir lorem ipsum dolor sit ame..."
+            android:textAlignment="center"
             android:textColor="@color/blue_transparent"
             android:textSize="18sp" />
 
@@ -123,6 +106,7 @@
             android:id="@+id/user_links_hug"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginBottom="30dp"
             android:orientation="horizontal">
 
@@ -133,8 +117,8 @@
                 android:contentDescription="Link para site"
                 android:padding="2dp"
                 android:src="@drawable/icon_plus"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/user_link_02"
+                app:layout_constraintBottom_toBottomOf="user"
+                app:layout_constraintEnd_toStartOf="@id/user_link_02"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
