@@ -13,34 +13,66 @@
         android:layout_width="match_parent"
         android:layout_height="220dp">
 
-        <ImageView
-            android:id="@+id/user_banner"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/user_banner_wrapper"
             android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="@color/grey"
-            android:contentDescription="Papel de parede do usuário"
-            android:scaleType="centerCrop"
-            android:src="TODO"
+            android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" >
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/user_picture"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
+            <ImageView
+                android:id="@+id/user_banner"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/grey"
+                android:contentDescription="Papel de parede do usuário"
+                android:scaleType="centerCrop"
+                android:src="TODO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/icon_plus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_picture_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:background="@color/light_grey"
-            android:contentDescription="Foto do usuário"
-            android:padding="10dp"
-            android:scaleType="centerCrop"
-            android:src="TODO"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:shapeAppearanceOverlay="@style/Theme.Arbeid.CircularImageView"
-            app:strokeColor="@color/white"
-            app:strokeWidth="12dp" />
+            app:layout_constraintStart_toStartOf="parent" >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/user_picture"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:background="@color/light_grey"
+                android:contentDescription="Foto do usuário"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="TODO"
+                app:shapeAppearanceOverlay="@style/Theme.Arbeid.CircularImageView"
+                app:strokeColor="@color/white"
+                app:strokeWidth="12dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_plus" />
+
+        </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
