@@ -266,23 +266,29 @@
 
     </LinearLayout>
 
+    <FrameLayout
+        android:id="@+id/profile_bottom_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/profile_bottom_layout"
+        android:background="@color/light_grey" />
+
     <RelativeLayout
         android:id="@+id/profile_bottom_layout"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/profile_main_layout"
-        android:background="@color/light_grey"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/no_post_view"
-            android:layout_width="250dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Essa conta ainda não possui postagens."
-            android:textAlignment="center"
-            android:textColor="@color/dark_grey"
-            android:textSize="18sp"/>
+            android:textColor="@color/blue_transparent"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
