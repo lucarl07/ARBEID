@@ -269,18 +269,51 @@
 
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/profile_bottom_separator"
+        <LinearLayout
+            android:id="@+id/profile_bottom_tab_selector"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_above="@id/profile_bottom_layout"
-            android:background="@color/light_grey" />
+            android:layout_height="52dp"
+            android:layout_below="@id/profile_main_layout"
+            android:gravity="bottom"
+            android:background="@color/light_grey"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/left_tab_selector_wrapper"
+                android:layout_width="205dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/tab_selector_user_profile">
+                <Button
+                    android:id="@+id/left_tab_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:text="POSTAGENS"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/right_tab_selector_wrapper"
+                android:layout_width="205dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tab_selector_user_profile">
+                <Button
+                    android:id="@+id/right_tab_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/light_grey"
+                    android:text="CONFIGURAÇÕES"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/profile_bottom_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/profile_main_layout"
+            android:layout_below="@id/profile_bottom_tab_selector"
             android:background="@color/white"
             android:minHeight="200dp"
             android:orientation="vertical">
