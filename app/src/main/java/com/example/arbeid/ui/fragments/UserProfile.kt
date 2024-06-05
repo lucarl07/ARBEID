@@ -27,7 +27,7 @@ class UserProfile : Fragment() {
         _binding = FragmentUserProfileBinding.inflate(inflater, container, false)
 
         binding.apply {
-            // Allowing for expansion in the CardViews:
+            // Allowing CardView expansion:
             userSkillsSelector.setOnClickListener {
                 expandCardView(userSkills, userSkillsList)
             }
