@@ -238,24 +238,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/skill_list_item"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:backgroundTint="@color/light_grey"
-                        app:contentPadding="10dp"
-                        app:cardCornerRadius="15dp"
-                        android:visibility="gone">
-
-                        <TextView
-                            android:id="@+id/sli_text_view"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Lorem ipsum"
-                            android:textSize="16sp" />
-
-                    </androidx.cardview.widget.CardView>
+                    <!-- INSERT LIST ITEMS HERE -->
 
                 </LinearLayout>
 
@@ -305,24 +288,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/exp_list_item"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:backgroundTint="@color/light_grey"
-                        app:contentPadding="10dp"
-                        app:cardCornerRadius="15dp"
-                        android:visibility="gone">
-
-                        <TextView
-                            android:id="@+id/eli_text_view"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Lorem ipsum"
-                            android:textSize="16sp" />
-
-                    </androidx.cardview.widget.CardView>
+                    <!-- INSERT LIST ITEMS HERE -->
 
                 </LinearLayout>
 
