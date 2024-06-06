@@ -239,7 +239,7 @@
                     </LinearLayout>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/user_skills_list"
+                        android:id="@+id/skill_list_item"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -248,13 +248,12 @@
                         app:cardCornerRadius="15dp"
                         android:visibility="gone">
 
-                        <!-- MODEL FOR CHILDREN OF USER_SKILLS_LIST
                         <TextView
+                            android:id="@+id/sli_text_view"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lorem ipsum"
                             android:textSize="16sp" />
-                        -->
 
                     </androidx.cardview.widget.CardView>
 
@@ -307,7 +306,7 @@
                     </LinearLayout>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/user_experience_list"
+                        android:id="@+id/exp_list_item"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -316,13 +315,12 @@
                         app:cardCornerRadius="15dp"
                         android:visibility="gone">
 
-                        <!-- MODEL FOR CHILDREN OF USER_EXPERIENCE_LIST
                         <TextView
+                            android:id="@+id/eli_text_view"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lorem ipsum"
                             android:textSize="16sp" />
-                        -->
 
                     </androidx.cardview.widget.CardView>
 
