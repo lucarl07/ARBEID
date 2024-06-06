@@ -248,11 +248,13 @@
                         app:cardCornerRadius="15dp"
                         android:visibility="gone">
 
+                        <!-- MODEL FOR CHILDREN OF USER_SKILLS_LIST
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lorem ipsum"
                             android:textSize="16sp" />
+                        -->
 
                     </androidx.cardview.widget.CardView>
 
@@ -314,11 +316,13 @@
                         app:cardCornerRadius="15dp"
                         android:visibility="gone">
 
+                        <!-- MODEL FOR CHILDREN OF USER_EXPERIENCE_LIST
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lorem ipsum"
                             android:textSize="16sp" />
+                        -->
 
                     </androidx.cardview.widget.CardView>
 
